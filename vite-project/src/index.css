@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .info-icon {
+        @apply text-base h-8 w-24 text-center pt-1 hover:bg-red-400 hover:border rounded-md box-shadow button-hover-effect;
+    }
+    .teleport-icon {
+        @apply bg-white text-base h-20 w-20 border-0.5 border-black text-center rounded-full box-shadow button-hover-effect;
+    }
+    .icon-tooltip {
+        @apply text-sm rounded-lg h-12 w-20 absolute flex flex-row justify-center items-center text-center bg-white ml-1 -mt-6 border-0.5 border-black box-shadow z-50;
+    }
+
+    .text-option {
+        @apply bg-white h-10 w-36 border-0.5 border-black text-center rounded-md hover:bg-blue-400 hover:border hover:border-white hover:text-white text-sm box-shadow button-hover-effect z-50;
+    }
+
+    .button-hover-effect {
+        @apply  hover:shadow-yellow-50 hover:bg-blue-400 hover:border hover:border-white transition-colors duration-200 ease-in-out delay-100 hover:animate-hoverPulse;
+    }
+
+    .box-shadow {
+       @apply shadow-md shadow-gray-800
+    }
+}
